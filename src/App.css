@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+  color: #000;
+}
+
+/* Navbar CSS */
+.nav-header {
+  width: 100vw;
+  height: 6rem;
+
+  position: fixed;
+  z-index: 999;
+}
+.nav-top, .nav-bottom {
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  font-size: 1.3rem;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-top {
+  background-color: #fff;
+}
+.nav-top h1 {
+  margin: 0;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.nav-top h1:hover {
+  opacity: 0.8;
+}
+.nav-menu-area {
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 0;
+}
+.menu li a {
+  text-decoration: none;
+  color: #000;
+}
+.menu li:last-child::after {
+  content: "%";
+  margin-left: 0.5rem;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.search-box {
+  padding: 5px;
+}
+.search-box:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+.search-box input {
+  margin-left: 5px;
+  border: none;
+  cursor: pointer;
+}
+.search-box input:focus {
+  outline: none;
+}
+.nav-login svg {
+  margin-right: 0.5rem;
+}
+.nav-bottom {
+  background-color: #eee;
+}
+.nav-bottom h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  margin-top: 4rem;
+}
+.nav-logo img {
+  width: 22rem;
+}
+
+/* ProductAll CSS */
+.productAll {
+  padding-top: 6rem;
+}
+.row > * {
+  padding: 0 !important;
+}
+.card {
+  border: none !important;
+  border-radius: 0 !important;
+}
+.card:hover { 
+  border: 1px solid #000 !important;
+  cursor: pointer;
+}
+.card .item-desc {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  padding: 0.2rem;
+}
+.card .item-desc-wrap {
+  display: flex;
+}
+.item-unisex {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* ProductDetail CSS */
+.product-detail-container {
+  padding-top: 6rem;
+}
+.product-detail-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.product-detail-img img {
+  width: 100%;
+  margin: 0 auto;
+}
+.product-detail-container .col:last-child {
+  max-width: 480px;
+  margin: 0 1rem;
+  font-size: 1.3rem;
+}
+.product-desc {
+  width: 50%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding: 9rem 1rem;
+  padding-bottom: 0;
+
+  position: fixed;
+  left: 50%;
+  background-color: #fff;
+  z-index: 1;
+}
+.product-size {
+  width: 100%;
+  margin: 2rem 0;
+  margin-top: 15rem;
+}
+.size-guide {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.size-guide a {
+  color: #00008b !important;
+}
+.size-box {
+  line-height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.size-box label {
+  flex: 1;
+  text-align: center;
+}
+.size-box label div {
+  border: 1px solid #ddd;
+}
+.size-box label:hover div {
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.size-box input {
+  display: none;
+}
+.size-box input:checked + div {
+  width: 100%;
+  background-color: #ddd;
+  border: 1px solid #000;
+}
+.size-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+.size-info div:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.product-button {
+  padding: 1rem;
+  width: 100%;
+  position: sticky;
+  top: 185px;
+  transform: translateX(-1rem);
+  z-index: 1;
+  background-color: #fff;
+}
+.product-button-wrap {
+  display: flex;
+  height: 6rem;
+  font-size: 1.5rem;
+}
+.add-button, .like-button {
+  border-radius: 0;
+  font-size: 1.3rem !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+.add-button {
+  flex: 1;
+  background-color: #00008b !important;
+}
+.add-button:hover {
+  opacity: 0.8;
+}
+.like-button {
+  width: 7rem;
+  border: 1px solid #00008b !important;
+}
+.product-detail {
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+.product-detail div::before {
+  content: "-";
+  margin-right: 1rem;
+}
+.product-detail div:first-child::before {
+  content: none;
+}
+
+/* Login CSS */
+.login-area {
+  padding-top: 20rem;
+  display: flex;
+  justify-content: center;
+}
+.login-form {
+  width: 70%;
+  font-size: 1.3rem;
+}
+.login-form .mb-3.login-heading {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.login-form a {
+  color: #00008b !important;
+  cursor: pointer;
+}
+.login-form .form-control {
+  height: 6rem;
+  border: none;
+  border-radius: 0;
+  background-color: #eee;
+  font-size: 1.3rem;
+}
+.login-form .form-control:hover {
+  border: 1px solid #000;
+}
+.login-form button {
+  width: 50%;
+  height: 6rem;
+  margin: 1rem 0;
+  border-radius: 0;
+  font-size: 1.3rem;
+}
+.login-form button:hover {
+  background-color: #00008b;
+}
+.mb-3.login-register {
+  padding: 0 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.mb-3.login-google {
+  padding: 10rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.login-google a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 0;
+  width: 18rem;
+  height: 5rem;
+  border: 1px solid #000;
+  color: #000;
+}
+
+/* Footer CSS */
+.Footer {
+  width: 100vw;
+  height: 12rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #d9d9d9;
+  position: relative;
+  letter-spacing: 0.2px;
+}
+.Footer .col {
+  padding: 0.5rem !important;
+  display: flex;
+  flex-direction: column;
+}
+.Footer a {
+  padding: 1px 0;
+  color: #00008b !important;
+}
+.Footer .acne {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0;
+  font-weight: 600;
+}
