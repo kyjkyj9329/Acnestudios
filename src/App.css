@@ -95,9 +95,9 @@ li {
 .nav-logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-
-  margin-top: 4rem;
+  margin: 4rem auto 30rem auto;
+  width: 22rem;
+  cursor: pointer;
 }
 .nav-logo img {
   width: 22rem;
@@ -203,7 +203,7 @@ li {
 .size-info {
   margin-top: 1rem;
   padding: 1rem;
-  background-color: #f9f9f9;
+  background-color: #eee;
 }
 .size-info div:first-child {
   font-size: 1.2rem;
@@ -214,7 +214,6 @@ li {
   width: 100%;
   position: sticky;
   top: 185px;
-  transform: translateX(-1rem);
   z-index: 1;
   background-color: #fff;
 }

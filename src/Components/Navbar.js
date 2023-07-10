@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className='nav-bottom'>
           <h1>New Arrivals</h1>
         </div>
-        <div className='nav-logo'>
+        <div className='nav-logo' onClick={() => navigate('/')}>
           <img src='https://www.acnestudios.com/on/demandware.static/Sites-acne_ca-Site/-/en_CA/v1688693229640/icons/acne_studios_logo.svg' />
         </div>
       </div>
